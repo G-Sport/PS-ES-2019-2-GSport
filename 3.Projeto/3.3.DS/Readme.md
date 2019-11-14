@@ -1,6 +1,23 @@
 ### Diagrama de Sequências - 14/11
 ###### Esta pasta contempla os diagramas de sequencia para todas as operações dos casos de uso identificados.
 
+#### UC001 - Fazer Cadastro
+![FazerCadastro](https://user-images.githubusercontent.com/43323869/68868429-46464600-06d6-11ea-9d02-f24a0c53a830.jpeg)
+
+#### UC002 - Fazer Login
+![FazerLogin](https://user-images.githubusercontent.com/43323869/68868431-46464600-06d6-11ea-817f-5103bf53ac93.jpeg)
+
+#### UC003 - Favoritar Time
+![FavoritarTime](https://user-images.githubusercontent.com/43323869/68868428-45adaf80-06d6-11ea-9618-1dbf8beb1e89.jpeg)
+
+#### UC004 - Seguir Evento
+![SeguirEvento](https://user-images.githubusercontent.com/43323869/68868435-46dedc80-06d6-11ea-884e-660a0b7ada3f.jpeg)
+
+#### UC005 - Consultar Evento Esportivo
+![ConsultarEventoEsportivo](https://user-images.githubusercontent.com/43323869/68868426-45adaf80-06d6-11ea-95f5-6814cd0cdc01.jpeg)
+
+
+
 #### UC011 - Editar Tabela de Disputas
 ![Editar Tabela de Disputas](https://user-images.githubusercontent.com/43323869/68866666-87892680-06d3-11ea-9210-85f510b82be3.png)
 
