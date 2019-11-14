@@ -16,7 +16,20 @@
 #### UC005 - Consultar Evento Esportivo
 ![ConsultarEventoEsportivo](https://user-images.githubusercontent.com/43323869/68868426-45adaf80-06d6-11ea-95f5-6814cd0cdc01.jpeg)
 
+#### UC006 - Consultar Modalidade
+![Consultar Modalidade](https://user-images.githubusercontent.com/52320228/68885053-2ffab300-06f3-11ea-9567-0df4da004b00.png)
 
+#### UC007 - Consultar Tabela de Disputas de um Evento
+![Consultar Tabela de Disputas de um Evento](https://user-images.githubusercontent.com/52320228/68885044-2e30ef80-06f3-11ea-9361-1597606263d8.png)
+
+#### UC008 - Consultar Disputa
+![Consultar Disputa](https://user-images.githubusercontent.com/52320228/68885052-2ffab300-06f3-11ea-9308-2238ba434265.png) 
+
+#### UC009 - Solicitar Criação de Tabela de Disputas
+![Solicitar Criação de Tabela de Disputas](https://user-images.githubusercontent.com/52320228/68885048-2f621c80-06f3-11ea-83a2-9ae8fcb53c88.png)
+
+#### UC010 - Finalizar Evento
+![Finalizar Evento](https://user-images.githubusercontent.com/52320228/68885047-2ec98600-06f3-11ea-9a77-acf3d3975e45.png)
 
 #### UC011 - Editar Tabela de Disputas
 ![Editar Tabela de Disputas](https://user-images.githubusercontent.com/43323869/68866666-87892680-06d3-11ea-9210-85f510b82be3.png)
