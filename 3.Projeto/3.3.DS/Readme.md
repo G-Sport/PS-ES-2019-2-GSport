@@ -8,7 +8,7 @@
 ![FazerLogin](https://user-images.githubusercontent.com/43323869/68868431-46464600-06d6-11ea-817f-5103bf53ac93.jpeg)
 
 #### UC003 - Favoritar Time
-![FavoritarTime](https://user-images.githubusercontent.com/43323869/68868428-45adaf80-06d6-11ea-9618-1dbf8beb1e89.jpeg)
+![Favoritar time](https://user-images.githubusercontent.com/54985845/69374691-5ab1b200-0c85-11ea-9a0a-707644bfc965.png)
 
 #### UC004 - Seguir Evento
 ![SeguirEvento](https://user-images.githubusercontent.com/43323869/68868435-46dedc80-06d6-11ea-884e-660a0b7ada3f.jpeg)
