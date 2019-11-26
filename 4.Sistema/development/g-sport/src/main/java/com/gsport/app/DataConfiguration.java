@@ -1,6 +1,6 @@
 package com.gsport.app;
 
-import javax.activation.DataSource;
+import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,15 +11,14 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 @Configuration
 public class DataConfiguration {
-	
 	@Bean
-	public DriverManagerDataSource dataSource() {
+	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/gsport");
 		dataSource.setUsername("root");
-		dataSource.setPassword("codegirl123");
-		return dataSource;
+		dataSource.setPassword("code123");
+		return (DataSource) dataSource;
 	}
 	
 	@Bean

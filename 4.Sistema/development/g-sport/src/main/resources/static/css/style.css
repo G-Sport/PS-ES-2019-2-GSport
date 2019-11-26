@@ -8,8 +8,8 @@
 
 .content{
   width: 500px;
-  min-height: 560px;    
-  margin: 0px auto;
+  min-height: 560px; 
+	margin: 80px auto;  
   position: relative;  
 }
 
@@ -47,7 +47,7 @@ p{
  
 label{
  font-family: 'PT Sans', sans-serif;
-  color: #405c60;
+  color: black;
   position: relative;
 }
 
@@ -68,7 +68,7 @@ input {
 }
  
 /*estilo dos input,  menos o checkbox */
-input:not([type="checkbox"]){
+input:not([type="checkbox"]):not([type="radio"]){
   width: 70%;
   margin-left: 70px;
   margin-top: 4px;
@@ -145,37 +145,6 @@ input[type="submit"]:hover{
   border: 1px solid #4ab3c6;
 }
 
-#cadastro, 
-#login{
-  position: absolute;
-  top: 100px;
-  width: 88%;   
-  padding: 18px 6% 60px 6%;
-  margin: 0 0 35px 0;
-   
-  -webkit-box-shadow: 5px;
-  border-radius: 5px;
-   
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
- 
-  animation-duration: 0.5s;
-  animation-timing-function: ease;
-  animation-fill-mode: both;
-}
-
-/* Efeito ao clicar no botão ( Ir para Login ) */
-#paracadastro:target ~ .content #cadastro,
-#paralogin:target ~ .content #login{
-  z-index: 2;
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
- 
-  -webkit-animation-delay: .1s;
-  animation-delay: .1s;
-}
- 
 /* Efeito ao clicar no botão ( Cadastre-se ) */
 #registro:target ~ .content #login,
 #paralogin:target ~ .content #cadastro{

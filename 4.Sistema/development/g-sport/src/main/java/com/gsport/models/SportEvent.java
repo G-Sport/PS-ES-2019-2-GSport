@@ -1,29 +1,10 @@
 package com.gsport.models;
 
-import java.io.Serializable;
+
 import java.util.Calendar;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-@Entity
-public class SportEvent implements Serializable{
-	
-	private static final long serialVersionUID = 1L;
-	
-	@Id //id para cada entidade Evento na Tabela
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long code;
-	
-	public long getCode() {
-		return code;
-	}
-
-	public void setCode(long code) {
-		this.code = code;
-	}
+public class SportEvent {
 
 	private String name;
 	private Calendar date;

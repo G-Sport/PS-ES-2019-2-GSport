@@ -12,39 +12,8 @@
 </head>
 <body>
   <div class="container" >
-    <a class="links" id="paracadastro"></a>
-    <a class="links" id="paralogin"></a>
-     
+    
     <div class="content">      
-      <!--FORMULÁRIO DE LOGIN-->
-      <div id="login">
-        <form method="post" action=""> 
-          <h1>G-Sport</h1> 
-          <h2>login</h2>
-          <p> 
-            <label for="email_login"></label>
-            <input id="email_login" name="nome_login" required="required" type="text" placeholder="e-mail"/>
-          </p>
-           
-          <p> 
-            <input id="password_login" name="password_login" required="required" type="password" placeholder="senha" /> 
-          </p>
-           
-          <p> 
-            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
-            <label for="manterlogado">Manter-me logado</label>
-          </p>
-           
-          <p> 
-            <input type="submit" value="entrar" /> 
-          </p>
-           
-          <p class="link">
-            Ainda não tem conta?
-            <a href="#paracadastro">Cadastre-se</a>
-          </p>
-        </form>
-      </div>
  
       <!--FORMULÁRIO DE CADASTRO-->
       <div id="cadastro">
@@ -58,7 +27,7 @@
            
           <p> 
             <label for="email_cad">Seu e-mail</label>
-            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="nome@gmail.com"/> 
           </p>
            
            <p> 
@@ -70,6 +39,13 @@
             <label for="senha_cad">Sua senha</label>
             <input id="senha_cad" name="senha_cad" required="required" type="password"/>
           </p>
+          
+          <p>
+          	Você é: <br/>
+				<input type="radio" name="userType" VALUE="crowd"> torcida
+				<input type="radio" name="userType" VALUE="org"> organizador
+				<input type="radio" name="userType" VALUE="team"> time
+          </p>
            
           <p> 
             <input type="submit" value="Cadastrar"/> 
@@ -77,9 +53,8 @@
            
           <p class="link">  
             Já tem conta?
-            <a href="#paralogin"> Ir para Login </a>
+            <a href="\"> Ir para Login </a>
           </p>
-        </form>
       </div>
     </div>
   </div>  
