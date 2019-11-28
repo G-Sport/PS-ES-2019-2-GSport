@@ -1,0 +1,42 @@
+html{
+	background-color: #00CCD6;
+	font-family: 'PT Sans', sans-serif;
+}
+
+h1{
+  font-size: 48px;
+  color: white;
+  padding: 2px 0 10px 0;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.content{
+  width: 500px;
+  min-height: 560px; 
+	margin: 80px auto;  
+  position: relative;  
+}
+
+.link{
+  position: absolute;
+  color: white;
+  text-allign: center;
+  height: 20px;
+  width: 440px;
+  padding: 17px 30px 20px 30px;
+  font-size: 25px;
+  text-align: center;
+  border-top: 1px solid #dbe5e8;
+ 
+  -webkit-border-radius: 0 0  5px 5px;
+  border-radius: 0 0  5px 5px;
+}
+
+a{
+	font-family: 'PT Sans', sans-serif;
+	color: #fff;
+}
+
