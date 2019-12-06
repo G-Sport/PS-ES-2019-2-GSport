@@ -1,18 +1,60 @@
 package com.gsport.app.models;
 
-public class User {
-	private String name;
-	private String email;
-	private String password;
-	private String phone;
+import java.util.Set;
 
-	public User(String name, String email, String password, String phone) {
+import javax.persistence.*;
+
+/* Entity User*/
+
+@Entity
+public class User {
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="id_user", nullable = false)
+	private long id;
+	
+	@Column(name="name", nullable = false)
+	private String name;
+	
+	@Column(name="email", nullable = false)
+	private String email;
+	
+	@Column(name="password", nullable = false)
+	private String password;
+	
+	@Column(name="phone")
+	private String phone;
+	
+	@Column(name="user_type", nullable = false)
+	private String userType;
+	
+	
+	public User() {}
+	
+	public User(String name, String email, String password, String phone, String userType) {
 		this.name = name;
 		this.email = email;
 		this.password = password;
 		this.phone = phone;
+		this.userType = userType;
+	}
+	
+	public User(String name, String email, String password, String userType) {
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.userType = userType;
+	}
+	
+	/* GETTERS AND SETTERS */
+	public long getId() {
+		return id;
 	}
 
+	public void setId(long id) {
+		this.id = id;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -44,5 +86,14 @@ public class User {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+
+	public String getUserType() {
+		return userType;
+	}
+
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}
+	
 
 }

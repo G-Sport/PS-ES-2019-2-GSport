@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+	<title>G-Sport | Cadastro</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/gsport.ico"/>
+
+	<!--===================================CSS=UTILITIES============================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+
+<!--===================================CSS=STYLE===================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+
+<!--==================================FORM=FOR=SIGNUP===================================================-->
+				<form class="signup100-form validate-form flex-sb flex-w" 
+						th:action="@{/signup}" th:object="${signupForm}" method="post"> <!--Thymleaf-->
+
+					<!-- Title and Subtitle for Form -->
+					<h1 class="title-50 p-b-20">G-Sport</h1>
+					<h2 class="subtitle-30 p-b-13">cadastro</h2>
+					<label class="txt4">Nome</label><br>
+					<!--Name validation-->
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Name is required">
+						
+						<!--Name input-->
+						<input class="input100" type="text" id="name" name="name" placeholder="ex.: Rubens Castro">
+					</div>
+					<label class="txt4">Telefone (somente números)</label><br>
+					<!--Phone validation-->
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Phone is required">
+						
+						<!--Phone input-->
+						<input class="input100" type="text" id="phone" name="phone" placeholder="ex.: 62999998888">
+					</div>
+					<label class="txt4">E-mail</label><br>
+					<!-- Email validation -->
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "e-mail is required">
+						
+						<!-- Email input -->
+						<input class="input100" type="text" id="email" name="email" placeholder="ex.: rbc@gmail.com">
+
+						<!-- Css for input selection -->
+						<span class="focus-input100"></span>
+					</div>
+					<label class="txt4">Senha</label><br>
+					<!-- Password validation -->
+					<div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
+						
+						<!-- Show password-->
+						<span class="btn-show-pass">
+							<i class="fa fa-eye"></i> 
+						</span>
+
+						<!-- Password input -->
+						<input class="input100" type="password" id="password" name="password" placeholder="password" minlength="6" required> 
+						<span class="focus-input100"></span>
+					</div>
+					<p="">
+					<label class="txt4">Você é:</label>
+					<p>
+						<input type="radio" name="option" value="option1" checked="yes">Torcida<br>
+						<input type="radio" name="option" value="option2">Time<br>
+						<input type="radio" name="option" value="option3">Organizador
+					</p>
+					</p="">                        
+					<!-- Button -->
+					<div class="container-btn">
+						<input type="submit" value="Cadastrar" class="default-btn">
+					</div>
+
+				</form>
+<!--====================================================================================================-->
+
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--=====================================JAVASCRIPT============================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+
+	<script src="js/main.js"></script>
+<!--===============================================================================================-->
+</body>
+</html>
